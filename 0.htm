@@ -1,0 +1,118 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+body.b{background-color:lightblue;font-family:Arial,DroidSans;line-height:2.0;font-size:20px;}
+body.m{font-family:DroidSans,Arial;line-height:2.0;font-size:36px;}
+body.o{font-family:DroidSans,Arial;line-height:2.0;font-size:24px;}
+span.b{
+cursor: pointer;
+margin: 0 3px;
+padding: 2;
+border-radius: 3px;
+border: 1px solid #D74B22;
+background: #f9f99f;
+font-size: 20px;
+font-family:Meiryo,"微軟正黑體","Microsoft JhengHei",Verdana,Arial,sans-serif;
+height: 28px;
+}
+span.m{
+cursor: pointer;
+margin: 0 4px;
+padding: 2;
+border-radius: 4px;
+border: 1px solid #D74B22;
+background: #f9f99f;
+font-size: 40px;
+font-family:DroidSans;
+height: 48px;
+}
+</style>
+<script>
+function go(uri){window.open(uri, '_blank');}
+function bCat(n, x){
+	var utc = new Date();
+	var t = new Date(utc.getTime() - (utc.getTimezoneOffset() * 60000) + 86400000 * n);
+	go('http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/event/' + x + t.toISOString().substring(0,10).replace(/-/g,'') + '.html');
+}
+function za()
+{
+  var x = document.getElementById('za').value;
+  go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
+}
+function xLoad()
+{
+	var css = ' b';
+	var ua = navigator.userAgent;
+
+	if (/Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini|Slimjet/i.test(ua))
+	{
+		css = ' m';
+	}
+	else if (typeof window.orientation !== 'undefined')
+	{
+		ua += ' : ' + window.orientation;
+		css = ' m';
+	}
+	var x = document.querySelector('ul');
+	var i = document.createElement('li');
+	i.textContent = ua;
+	x.appendChild(i);
+
+	document.body.className += css;
+	x = document.querySelectorAll('span');
+	for (i = x.length; --i >= 0;) x[i].className += css;
+}
+</script>
+</head>
+<body onload='xLoad()'>
+<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:44pt;background:#7c7'> <span onclick='za()'>&nbsp; + &nbsp;</span></div>
+<ul type=square>
+ <li>0day : <span onclick='go("https://apk.tw")'>apk.tw</span>
+	<span onclick='go("https://awabest.com"); return false;'>awabest</span>
+	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>ik</span>
+	<span onclick='go("http://www.hdmayi.com/dsu_paulsign-sign.html")'>螞蟻</span>
+	<span onclick='go("https://www.microduo.tw/plugin.php?id=zb7com_sign:sign&signop=sign&formhash=fb2aa9eb")'>Duo</span>
+	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
+	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
+	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+ <li><span onclick='go("http://ponos.s3.amazonaws.com/information/appli/battlecats/calendar/tw/index.html")'>貓咪</span> :
+	<span onclick='go("https://5wzldcm644rb6gydwsl48a-on.drv.tw/CATDETA/")'>日程表</span>
+	<span onclick='bCat(-2, "tw/")'>前</span>
+	<span onclick='bCat(-1, "tw/")'>昨</span>
+	<span onclick='bCat(0, "tw/")'>今</span> 
+	<span onclick='bCat(1, "tw/")'>明</span> 
+	<span onclick='go("https://goo.gl/Qa5t8x")'>週</span>
+	<span onclick='go("https://goo.gl/eUu8xH")'>日</span>
+	<span onclick='go("https://sites.google.com/site/maozhan123/home")'>曆</span>
+	<span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
+	<span onclick='go("http://mewmewwar.herokuapp.com")'>中文版超絕</span>
+|	<span onclick='go("http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/calendar/index.html")'>JP</span>
+	<span onclick='bCat(-2, "")'>前</span>
+	<span onclick='bCat(-1, "")'>昨</span>
+	<span onclick='bCat(0, "")'>今</span> 
+	<span onclick='bCat(1, "")'>明</span> 
+	<span onclick='go("https://toutzn.000webhostapp.com/index.php")'>關卡</span>
+	<span onclick='go("https://cattw.000webhostapp.com/index.php")'>②</span>
+	<span onclick='go("https://cattw2.000webhostapp.com/")'>(2)</span>
+	<span onclick='go("http://www.toutzn.byethost24.com/")'>(3)</span>
+<li><span onclick='go("https://keep.google.com/#label/2do")'>Keep</span>
+	<span onclick='go("https://contacts.google.com")'>聯絡人</span>
+	<span onclick='go("https://fit.google.com")'>Fit</span>
+	<span onclick='go("https://www.geoiptool.com")'>Geo</span>
+	<span onclick='go("https://www.ip-adress.com")'>IP</span>
+	<span onclick='go("https://ipleak.net")'>ipLeak</span>
+	<span onclick='go("https://whoer.net")'>Whoer</span>
+	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
+	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
+	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
+	<span onclick='go("https://apps.qoo-app.com/app/7055")'>J</span>
+	<span onclick='go("https://apps.qoo-app.com/app/6906")'>Q</span>
+<li><span onclick='go("https://m.facebook.com")'>FB</span>
+	<span onclick='go("https://send.firefox.com")'>Fox</span>
+	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
+<li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
+	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
+	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
+	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
+	<span onclick='go("http://lynopus.github.io/0.htm")'>@</span>
+</ul></body></html>
+<!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
