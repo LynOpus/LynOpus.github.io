@@ -1,4 +1,4 @@
-# LynOpus.github.io
+# [LynOpus.github.io](https://github.com/LynOpus/LynOpus.github.io.git)
 
 GitHib Pages Tutorial
 
@@ -9,8 +9,6 @@ GitHib Pages Tutorial
 
 - [bmLet](bmLet.md) : Bookmark Let
 
-
-## [git source](https://github.com/LynOpus/LynOpus.github.io.git)
 
 [sync]: # ( git ls-files | xargs git add ; git commit -m "`date +'sync on %F %T'`" ; git push -u origin master )
 [update]: # ( git ls-files | xargs git add ; git commit -m "$(date +'Update on %F %T')"; git push -u origin master )
