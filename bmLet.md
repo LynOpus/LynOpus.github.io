@@ -15,7 +15,7 @@
 ## Markdown
 
 - [#Chrono
-](javascript:(function(d){var x=d.createElement('textarea');x.appendChild(d.createTextNode('## '+d.title+'\n\n['+d.lastModified+']('+d.URL+')\n'));d.body.appendChild(x);x.select();d.execCommand('copy');d.body.removeChild(x);})(document))
+](javascript:(function(d){var x=d.createElement('textarea');x.appendChild(d.createTextNode('\n## '+d.title+'\n\n['+d.lastModified+']('+d.URL+')\n\n'));d.body.appendChild(x);x.select();d.execCommand('copy');d.body.removeChild(x);})(document))
 
 - [#MarkUP
 ](javascript:(function(d){var x=d.createElement('textarea');x.appendChild(d.createTextNode('\n## ['+d.title+'\n]('+d.URL+')\n'));d.body.appendChild(x);x.select();d.execCommand('copy');d.body.removeChild(x);})(document))
@@ -70,9 +70,9 @@
 - [同文堂
 ](javascript:(function(d){var s=d.getElementById('twLet');if(s!=null){d.body.removeChild(s);}s=d.createElement('script');s.language='javascript';s.type='text/javascript';s.src='https://lynopus.github.io/tongwen.js';s.id='twLet';d.body.appendChild(s);})(document);)
 
-- [|gTran|
+- [gTran
 ](javascript:(function(w,d){var u='https://translate.google.com/',e='&hl=en&langpair=auto|zh-TW&tbb=1&ie='+(d.charset||d.characterSet),z='getSelection',t=(''+(w[z]?w[z]():d[z]?d[z]():d.selection.createRange().text)).replace(/(^\s+|\s+$)/g,'');if(t!=''){y=w.open(u+'?text='+t+e,'','status=0,toolbar=0,width=800,height=640,resizable=1');}else{location.href=u+'translate?u='+encodeURIComponent(location.href)+e;}})(window,document))
-|[old version
+| [old version
 ](javascript:var w=window,d=document,z='getSelection';var t=(''+(w[z]?w[z]():d[z]?d[z]():d.selection.createRange().text)).replace(/(^\s+|\s+$)/g,'');var e='&hl=en&langpair=auto|zh-TW&tbb=1&ie='+(d.charset||d.characterSet);if(t!=''){y=w.open('http://translate.google.com/?text='+t+e,'','status=0,toolbar=0,width=800,height=640,resizable=1');}else{location.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+e;};)
 | [elder
 ](javascript:var t=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection&&document.selection.createRange&&document.selection.createRange().text));var e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/?text='+t+'&hl=en&langpair=auto|zh-TW&tbb=1&ie='+e;}else{location.href='http://translate.google.com/translate?u='+encodeURIComponent(location.href)+'&hl=en&langpair=auto|zh-TW&tbb=1&ie='+e;};)
@@ -85,20 +85,18 @@
 
 - [|msTran
 ](javascript:window.open('https://www.translatetheweb.com/?to=zh-Hant&a='+encodeURIComponent(document.location)))
-|[old version
+| [old version
 ](javascript:window.open('https://www.microsofttranslator.com/bv.aspx?to=zh-CHT&a='+encodeURIComponent(document.location)))
 | [elder
 ](javascript:(function(){var s=document.createElement('script');s.type='text/javascript';s.src='http://labs.microsofttranslator.com/bookmarklet/default.aspx?f=js&to=zh-cht';document.body.insertBefore(s,document.body.firstChild);})())
 
-+ [cDict
-](https://cdict.net/)
-: English-Chinese Dictionary (英漢字典) 
++ [cDict](https://cdict.net/) : English-Chinese Dictionary (英漢字典) 
 
   - [cDic
 ](https://cdict.net/?q=yahoo)
   - [gDic
 ](http://www.google.com.tw/m/search?site=dictionary&gdm=1&q=welcome)
-  - [&yDic
+  - [yDic
 ](javascript:function se(d){return d.selection?d.selection.createRange().text:d.getSelection()} s=se(document); for(i=0;i<frames.length && !s; i++) s=se(frames[i].document); if (!s || s=='') s=prompt('Enter search word ',''); if(s) window.open('https://tw.dictionary.search.yahoo.com/search?p=' + encodeURIComponent(s),'', 'width=700,height=600').focus();)
 | [orig version
 ](javascript:function se(d){return d.selection?d.selection.createRange().text:d.getSelection()} s=se(document); for(i=0;i<frames.length && !s; i++) s=se(frames[i].document); if (!s || s=='') s=prompt('Enter search word ',''); if(s) window.open('http://tw.dictionary.yahoo.com/dictionary?p=' + encodeURIComponent(s),'', 'width=700,height=600').focus();)
@@ -109,13 +107,14 @@
 ](javascript:(function(d){var s=d.getElementById('hzLet');if(s!=null){d.body.removeChild(s);} s=d.createElement('script');s.language='javascript';s. type='text/javascript';s.src='https://sites.google.com/site/bemehom/hz.js';s.id='hzLet';d.body.appendChild(s);})(document);)
 
 - [釋義
-](javascript:void((function() {var element=document.createElement('script');element.setAttribute('src', 'http://www.zdic.net/tools/xzsy/');document.body.appendChild(element);})()))
+](javascript:void((function(){var element=document.createElement('script');element.setAttribute('src', 'http://www.zdic.net/tools/xzsy/');document.body.appendChild(element);})()))
 
 
 ## Site
 
-- [@ms@
-](javascript:window.location.href='https://www.microsofttranslator.com/bv.aspx?to=zh-CHT&a='+encodeURIComponent(document.location))
+- [ms
+](javascript:window.location.href='https://www.microsofttranslator.com/bv.aspx?to=zh-CHT&a='+encodeURIComponent(document.location);)
+
 : take MicroSoft Translator as proxy
 
 + [Archive
@@ -135,11 +134,11 @@
 | [old version
 ](javascript:(function(){var d=document;window.open('http://mail.google.com/mail/?view=cm&fs=1&tf=1&to=opus.lin%252Blx@gmail.com&su='+encodeURIComponent(d.title)+'&body='+encodeURIComponent(d.location)+escape('\n\n\n\n'),'','width=800,height=600,top=40,left=40').focus()})())
 
-- [&SE
+- [SE
 ](javascript:(function(w,d){var s=""+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(!s)s=prompt("\u8acb\u8f38\u5165\u641c\u5c0b\u7684\u95dc\u9375\u5b57%EF%BC%9A","");w.open('https://www.baidu.com/s?wd='+s);w.open('https://www.google.com/search?q='+s+'&ie=utf-8&oe=utf-8');w.open('https://www.bing.com/search?q='+s)})(window,document))
 : multiple search engines
 
-- [&WGB
+- [WGB
 ](javascript:(function(d,w){var s=''+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(s){s=encodeURIComponent(s);w.open('https://en.wikipedia.org//w/index.php?title=Special:Search&search='+s);w.open('https://www.google.com/search?ie=utf-8&oe=utf-8&q='+s);w.open('https://www.bing.com/search?q='+s)}})(document,window);)
 : search Wiki / Google / Bing
 
