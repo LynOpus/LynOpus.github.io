@@ -1,6 +1,6 @@
 # [LynOpus.github.io](https://github.com/LynOpus/LynOpus.github.io.git)
 
-GitHib Pages Tutorial
+GitHib [Pages](https://pages.github.com/) Tutorial : [0](https://lynopus.github.io/0.htm) | [@](https://lynopus.github.io/@.htm)
 
 - [0](0.htm) - homepage for mobile `file:///sdcard/DCIM/0.htm`
 - [01](01.html) - homepage for mobile

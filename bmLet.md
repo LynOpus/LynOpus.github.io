@@ -44,15 +44,6 @@
 | [orig version
 ](javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();)
 
-  - [Readable
-](http://readable.tastefulwords.com/)
-
-  - [Read85%
-](javascript:(function(){_readableOptions={'text_font':'quote(Palatino Linotype), Palatino, quote(Book Antigua), Georgia, serif','text_font_monospace':'quote(Courier New), Courier, monospace','text_font_header':'quote(Times New Roman), Times, serif','text_size':'16px','text_line_height':'1.5','box_width':'85%','color_text':'#282828','color_background':'#F5F5F5','color_links':'#0000FF','text_align':'normal','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','http://readable-static.tastefulwords.com/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
-
-  - [Black
-](javascript:(function(){_readableOptions={'text_font':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_font_monospace':'quote(Courier New), Courier, monospace','text_font_header':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_size':'18px','text_line_height':'1.5','box_width':'40em','color_text':'#F0F0F0','color_background':'#2C2D32','color_links':'#009900','text_align':'justified','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','http://readable-static.tastefulwords.com/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
-
   - [Print as Like
 ](javascript:(function(w,d){if(w['ppw']&&ppw['bookmarklet']){ppw.bookmarklet.toggle();}else{w._pwyl_home='http://www.printwhatyoulike.com/';w._pwyl_pro_id=null;w._pwyl_bmkl=d.createElement('script');w._pwyl_bmkl.setAttribute('type','text/javascript');w._pwyl_bmkl.setAttribute('src',w._pwyl_home+'static/compressed/pwyl_bookmarklet_10.js');w._pwyl_bmkl.setAttribute('pwyl','true');d.getElementsByTagName('head')[0].appendChild(w._pwyl_bmkl);}})(window,document))
 | [orig version
@@ -63,6 +54,33 @@
 | [orig version
 ](javascript:(function(){pfstyle='bk';_pnicer_script=document.createElement('SCRIPT');_pnicer_script.type='text/javascript';_pnicer_script.src='http://cdn.printfriendly.com/printfriendly.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_pnicer_script);_pnicer_css=document.createElement('LINK');_pnicer_css.rel='stylesheet';_pnicer_css.href='http://cdn.printfriendly.com/printfriendly.css';_pnicer_css.type='text/css';_pnicer_css.media='screen';document.getElementsByTagName('head')[0].appendChild(_pnicer_css);})();)
 
+
+## Readability
+
+### [1st](http://www.readability.com/bookmarklets) shut down on 2016/09/30 .
+
+### [Readable
+](http://readable.tastefulwords.com/) : still work on 2020-10-26
+
+  - [Read85%
+](javascript:(function(){_readableOptions={'text_font':'quote(Palatino Linotype), Palatino, quote(Book Antigua), Georgia, serif','text_font_monospace':'quote(Courier New), Courier, monospace','text_font_header':'quote(Times New Roman), Times, serif','text_size':'16px','text_line_height':'1.5','box_width':'85%','color_text':'#282828','color_background':'#F5F5F5','color_links':'#0000FF','text_align':'normal','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','http://readable-static.tastefulwords.com/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
+
+  - [Black
+](javascript:(function(){_readableOptions={'text_font':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_font_monospace':'quote(Courier New), Courier, monospace','text_font_header':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_size':'18px','text_line_height':'1.5','box_width':'40em','color_text':'#F0F0F0','color_background':'#2C2D32','color_links':'#009900','text_align':'justified','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','http://readable-static.tastefulwords.com/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
+
+### rework on 2020/10/26 with [akaleeroy/Readable-Bookmarklet](https://gist.github.com/akaleeroy/855be4a4a690ff9dafa05234f2f35928)
+
++ [Readable](https://rdbl.us/)
+
+  - [readable
+](javascript:(function(){_readableOptions={text_font:"quote(Open Sans Light), quote(Segoe UI Light), quote(Lucida Sans Unicode), quote(Lucida Grande), Arial, Helvetica, sans-serif",text_font_monospace:"quote(Lucida Console), quote(Andale Mono), Monaco, monospace",text_font_header:"Tinos",text_size:"24px",text_line_height:"1.75",box_width:"30em",color_text:"#FDFDFD",color_background:"#000000",color_links:"#99CCFF",text_align:"normal",base:"blueprint",custom_css:"#box,#menu,#rtl_box{background-color:transparent}::-webkit-scrollbar,::-webkit-scrollbar-corner{background:#000!important}#floating{top:1em}#floating a{padding:0;color:#708090!important}#floating_close{font-size:0}#floating_close:before{content:quote(×);font-size:24px;padding-left:.45em;padding-right:.45em;margin-right:.7em;border:2px solid;border-radius:50%}#box_inner #menu a:hover,#floating a:hover{color:#a9a9a9!important}#menu,#rtl_box{border:2px solid #708090;border-radius:32px}#menu a,#rtl_box a{color:#708090;border-bottom:1px solid inherit;vertical-align:sub}#my_news{visibility:hidden}pre{overflow-x:scroll;}@media (max-width:920px){#floating{right: -5px;}#floating a,#floating a:before{margin:0!important}}#text a{word-wrap:break-word}"};if(document.getElementsByTagName("body").length>0);else{return}if(window.$readable){if(window.$readable.bookmarkletTimer){return}}else{window.$readable={}}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return}_readableScript=document.createElement("script");_readableScript.setAttribute("src","//rdbl.us/target.js?rand="+encodeURIComponent(Math.random()));document.getElementsByTagName("body")[0].appendChild(_readableScript)})();)
+  - [.gray
+](javascript:(function(d){_readableOptions={'text_font':'Helvetica,quote(Segoe UI Light),Arial,Tahoma,sans-serif','text_font_monospace':'Monaco,quote(Courier New),Courier,monospace','text_font_header':'Helvetica,Arial,Tahoma,sans-serif','text_size':'21px','text_line_height':'1.75','box_width':'40em','color_text':'#F0F0F0','color_background':'#2C2D32','color_links':'#009900','text_align':'justified','base':'blueprint','custom_css':''};if(d.getElementsByTagName('body').length<=0) return;if(window.$readable){if(window.$readable.bookmarkletTimer) return;}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}z=d.createElement('script');z.setAttribute('src','//rdbl.us/target.js?rand='+encodeURIComponent(Math.random()));d.getElementsByTagName('body')[0].appendChild(z);})(document))
+
+ - [.Dark
+](javascript:(function(){_readableOptions={'text_font':'Monaco','text_font_monospace':'Monaco','text_font_header':'','text_size':'20px','text_line_height':'1.5','box_width':'40em','color_text':'#FDFDFD','color_background':'#343A3A','color_links':'#99CCFF','text_align':'justified','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','//rdbl.us/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
+
+### [mozilla version](https://github.com/viktor-evdokimov/bookmarklet-readability)
 
 
 ## DicT - Dictionary & Translator
@@ -142,5 +160,14 @@
 ](javascript:(function(d,w){var s=''+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(s){s=encodeURIComponent(s);w.open('https://en.wikipedia.org//w/index.php?title=Special:Search&search='+s);w.open('https://www.google.com/search?ie=utf-8&oe=utf-8&q='+s);w.open('https://www.bing.com/search?q='+s)}})(document,window);)
 : search Wiki / Google / Bing
 
+
+## Utility
+
+- Unblock right-click 解除鎖滑鼠右鍵 [Right
+](javascript:(function(a,c){function b(d){var e='on'+d;if(c.addEventListener){c.addEventListener(d,function(f){for(var g=f.originalTarget;g;g=g.parentNode){g[e]=null}},true)}c[e]=null;a[e]=null;if(a.body){a.body[e]=null}}b('contextmenu');b('click');b('mousedown');b('mouseup');b('selectstart')})(document,window);)
+
+
++ [FlipBoard Social Plugins](https://about.flipboard.com/social-plugins/?tool=browser) : [+FlipIt
+](javascript:void((function(d,w,p,s,r,t,l){t=(w.screenTop||w.screenY)+50;l=(w.screenX||w.screenLeft)+(w.innerWidth||d.documentElement.offsetWidth||0)/2-s/2;z=encodeURIComponent(w.location.href);w.__flipboard=w.open('https://share.flipboard.com/bookmarklet/popout?v=2&title='+encodeURIComponent(d.title)+'&url='+z+'&t='+p+'&utm_medium=bookmarklet&utm_campaign=tools&utm_source='+z,'__flipboard_flipit','width='+s+',height='+r+',top='+t+',left='+l+',location=no,resizable=yes,status=no,scrollbars=no,personalbar=no,toolbar=no,menubar=no');s=d.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','https://d2jsycj2ly2vqh.cloudfront.net/bookmarklet/js/popout-helper.min.js?t='+p);d.body.appendChild(s);setTimeout(function(){w.__flipboard.focus()},50);})(document,window,(new Date().getTime()),535,565)))
 
 [eof]: # ( vim:set ft=markdown ts=4 sw=4 sts=2 tw=960 noai et list: -*- coding: utf-8 -*- )
