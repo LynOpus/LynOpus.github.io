@@ -2,8 +2,9 @@
 
 GitHib Pages Tutorial
 
-- [0](0.htm) - homepage for mobile
+- [0](0.htm) - homepage for mobile `file:///sdcard/DCIM/0.htm`
 - [01](01.html) - homepage for mobile
+- [@](@.htm) - simpler homepage for mobile `file:///sdcard/@.htm`
 
 - [FCT](FCT.md) : Film
 

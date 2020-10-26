@@ -1,0 +1,88 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>@</title>
+<style>
+body{font-family:DroidSans,Arial;line-height:2.0;font-size:40px;}
+span{
+cursor: pointer;
+margin: 0 4px;
+padding: 2;
+border-radius: 4px;
+border: 1px solid #D74B22;
+background: #f9f99f;
+font-family:DroidSans;
+font-size: 40px;
+height: 48px;
+}
+</style>
+<script>
+function go(uri){window.open(uri, '_blank');}
+function bCat(n, x){
+	var utc = new Date();
+	var t = new Date(utc.getTime() - (utc.getTimezoneOffset() * 60000) + 86400000 * n);
+	go('http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/event/' + x + t.toISOString().substring(0,10).replace(/-/g,'') + '.html');
+}
+function za()
+{
+	var x = document.getElementById('za').value;
+	go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
+}
+function bf()
+{
+	var x = document.getElementById('za').value;
+	go('https://m.feebee.com.tw/s/?q='+encodeURIComponent(x));
+}
+</script>
+</head>
+<body>
+<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:40pt;background:#7c7'> <span onclick='za()'>&nbsp; + &nbsp;</span>
+<span onclick='bf()'>&nbsp; ¥ &nbsp;</span></div>
+<ul type=square>
+<li><span onclick='go("https://today.line.me")'>LiNE</span>
+	<span onclick='go("https://apk.tw")'>apk.tw</span>
+	<span onclick='go("https://awabest.com"); return false;'>awabest</span>
+	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>&nbsp; jk &nbsp;</span>
+	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
+	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
+	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+<li><span onclick='go("http://ponos.s3.amazonaws.com/information/appli/battlecats/calendar/tw/index.html")'>貓咪</span> :
+	<span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
+	<span onclick='go("https://5wzldcm644rb6gydwsl48a-on.drv.tw/CATDETA/")'>日程表</span>
+	<span onclick='bCat(-2, "tw/")'>前</span>
+	<span onclick='bCat(-1, "tw/")'>昨</span>
+	<span onclick='bCat(0, "tw/")'>今</span> 
+	<span onclick='bCat(1, "tw/")'>明</span> 
+	<span onclick='go("https://goo.gl/Qa5t8x")'>週</span>
+	<span onclick='go("https://goo.gl/eUu8xH")'>日</span>
+	<span onclick='go("https://sites.google.com/site/maozhan123/home")'>曆</span>
+|	<span onclick='go("http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/calendar/index.html")'>JP</span>
+	<span onclick='bCat(-2, "")'>前</span>
+	<span onclick='bCat(-1, "")'>昨</span>
+	<span onclick='bCat(0, "")'>今</span> 
+	<span onclick='bCat(1, "")'>明</span> 
+	<span onclick='go("http://www.toutzn.byethost24.com/")'>關卡</span>
+	<span onclick='go("http://cattw.epizy.com/")'>②</span>
+<li><span onclick='go("https://keep.google.com/#label/2do")'>Keep</span>
+	<span onclick='go("https://keep.google.com/#label/Nyanko")'>Nyanko</span>
+	<span onclick='go("https://contacts.google.com")'>聯絡人</span>
+	<span onclick='go("https://fit.google.com")'>Fit</span>
+	<span onclick='go("https://www.geoiptool.com")'>Geo</span>
+	<span onclick='go("https://www.ip-adress.com")'>IP</span>
+	<span onclick='go("https://ipleak.net")'>ipLeak</span>
+	<span onclick='go("https://whoer.net")'>Whoer</span>
+	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
+	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
+	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
+<li><span onclick='go("https://m.facebook.com")'>FB</span>
+	<span onclick='go("https://send.firefox.com")'>Fox</span>
+	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
+|	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
+<li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
+	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
+	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
+	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
+	<span onclick='go("https://miny.app/")'>miny</span>
+	<span onclick='go("https://www.bing.com")'>Bing</span>
+	<span onclick='go("https://lynopus.github.io/@.htm")'>@</span>
+	<span onclick='go("file:///sdcard/@.htm")'>.</span>
+</ul></body></html>
+<!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
