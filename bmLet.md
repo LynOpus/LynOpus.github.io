@@ -8,6 +8,10 @@
 - [Useful Bookmarklet
 ](http://www.howtogeek.com/125846/the-most-useful-bookmarklets-to-enhance-your-browsing-experience/)
 
+- [書籤工具](https://tw.piliapp.com/bookmarklet/)
+
+- [gHacks bookmarklet](https://www.ghacks.net/?s=bookmarklet)
+
 - [Convert bookmarklet to Chrome extension
 ](https://sandbox.self.li/bookmarklet-to-extension/)
 
@@ -67,6 +71,10 @@
 
   - [Black
 ](javascript:(function(){_readableOptions={'text_font':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_font_monospace':'quote(Courier New), Courier, monospace','text_font_header':'Helvetica, quote(Helvetica Neuve), Arial, Tahoma, sans-serif','text_size':'18px','text_line_height':'1.5','box_width':'40em','color_text':'#F0F0F0','color_background':'#2C2D32','color_links':'#009900','text_align':'justified','base':'blueprint','custom_css':''};if(document.getElementsByTagName('body').length>0);else{return;}if(window.$readable){if(window.$readable.bookmarkletTimer){return;}}else{window.$readable={};}window.$readable.bookmarkletTimer=true;window.$readable.options=_readableOptions;if(window.$readable.bookmarkletClicked){window.$readable.bookmarkletClicked();return;}_readableScript=document.createElement('script');_readableScript.setAttribute('src','http://readable-static.tastefulwords.com/target.js?rand='+encodeURIComponent(Math.random()));document.getElementsByTagName('body')[0].appendChild(_readableScript);})())
+
+
+### [Readability - An Arc90 Lab Experiment](http://ejucovy.github.io/readability/)
+
 
 ### rework on 2020/10/26 with [akaleeroy/Readable-Bookmarklet](https://gist.github.com/akaleeroy/855be4a4a690ff9dafa05234f2f35928)
 
