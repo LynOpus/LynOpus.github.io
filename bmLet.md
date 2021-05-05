@@ -178,4 +178,17 @@
 + [FlipBoard Social Plugins](https://about.flipboard.com/social-plugins/?tool=browser) : [+FlipIt
 ](javascript:void((function(d,w,p,s,r,t,l){t=(w.screenTop||w.screenY)+50;l=(w.screenX||w.screenLeft)+(w.innerWidth||d.documentElement.offsetWidth||0)/2-s/2;z=encodeURIComponent(w.location.href);w.__flipboard=w.open('https://share.flipboard.com/bookmarklet/popout?v=2&title='+encodeURIComponent(d.title)+'&url='+z+'&t='+p+'&utm_medium=bookmarklet&utm_campaign=tools&utm_source='+z,'__flipboard_flipit','width='+s+',height='+r+',top='+t+',left='+l+',location=no,resizable=yes,status=no,scrollbars=no,personalbar=no,toolbar=no,menubar=no');s=d.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','https://d2jsycj2ly2vqh.cloudfront.net/bookmarklet/js/popout-helper.min.js?t='+p);d.body.appendChild(s);setTimeout(function(){w.__flipboard.focus()},50);})(document,window,(new Date().getTime()),535,565)))
 
+
+## MP3
+
+
++ [YouTube MP3 - Convert Youtube Video to MP3
+](https://youtube-mp3.romanstefko.com/en) : info from PaleMoon portal
+
+  + [=mp3
+](javascript:(function(d){window.open('https://youtube-mp3.romanstefko.com/en/welcome/process?youtube_url='+encodeURIComponent(d.location),'','width=800,height=600,top=40,left=40').focus()})(document))
+  + [.mp3
+](javascript:void(window.open('https://youtube-mp3.romanstefko.com/en/welcome/process?youtube_url='+location.href)))
+
+
 [eof]: # ( vim:set ft=markdown ts=4 sw=4 sts=2 tw=960 noai et list: -*- coding: utf-8 -*- )

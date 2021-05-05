@@ -1,7 +1,6 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>@</title>
 <style>
-body{font-family:DroidSans,Arial;line-height:2.0;font-size:40px;}
+body{font-family:DroidSans,Arial;line-height:2.0;font-size:36px;}
 span{
 cursor: pointer;
 margin: 0 4px;
@@ -10,11 +9,16 @@ border-radius: 4px;
 border: 1px solid #D74B22;
 background: #f9f99f;
 font-family:DroidSans;
-font-size: 40px;
-height: 48px;
+font-size: 36px;
+height: 36px;
 }
 </style>
 <script>
+function mm(u){
+var x=document.getElementById('ax');
+ax.href=u;
+setTimeout(function(){document.getElementById('ax').click();}, 100);
+}
 function go(uri){window.open(uri, '_blank');}
 function bCat(n, x){
 	var utc = new Date();
@@ -24,26 +28,46 @@ function bCat(n, x){
 function za()
 {
 	var x = document.getElementById('za').value;
-	go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
+	mm("https://www.google.com/search?num=20&ie=UTF-8&q="+encodeURIComponent(x));
 }
 function bf()
 {
 	var x = document.getElementById('za').value;
 	go('https://m.feebee.com.tw/s/?q='+encodeURIComponent(x));
 }
+function bing()
+{
+	var x = document.getElementById('za').value;
+	if (x.length > 1) x='/search?q='+encodeURIComponent(x+' torrent');
+	else x='';
+	go('https://www.bing.com'+x);
+}
+function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+encodeURIComponent(document.getElementById('za').value))}
 </script>
 </head>
 <body>
-<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:40pt;background:#7c7'> <span onclick='za()'>&nbsp; + &nbsp;</span>
-<span onclick='bf()'>&nbsp; ¥ &nbsp;</span></div>
+<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:36pt;background:#7c7'>
+<span onclick='za()'>&nbsp; + &nbsp;</span>
+<span onclick='bf()'> ¥&nbsp;</span> <span onclick='good()'> $&nbsp;</span></div>
 <ul type=square>
 <li><span onclick='go("https://today.line.me")'>LiNE</span>
 	<span onclick='go("https://apk.tw")'>apk.tw</span>
 	<span onclick='go("https://awabest.com"); return false;'>awabest</span>
 	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>&nbsp; jk &nbsp;</span>
+	<span onclick='go("https://94i.in/")'>94i</span>
 	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
 	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
 	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+<li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
+	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
+	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
+	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
+	<span onclick='go("https://miny.app/")'>miny</span>
+	<span onclick='bing()'>Bing</span>
+	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span><a id=ax href=# target=_blank style="display:none">.</a>
+<li><span onclick='go("https://www.above.tw")'>豹投資</span>
+	<span onclick='go("https://www.cmoney.tw/follow/channel")'>爆料同學會</span>
+	<span onclick='go("https://statementdog.com")'>財報狗</span>
 <li><span onclick='go("http://ponos.s3.amazonaws.com/information/appli/battlecats/calendar/tw/index.html")'>貓咪</span> :
 	<span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
 	<span onclick='go("https://5wzldcm644rb6gydwsl48a-on.drv.tw/CATDETA/")'>日程表</span>
@@ -75,14 +99,7 @@ function bf()
 <li><span onclick='go("https://m.facebook.com")'>FB</span>
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
 	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
+	<span onclick='go("https://docs.google.com/spreadsheets/d/13gCVbMtgLrU_Cza2xe7kT9IgynJuiFmWIvn0_g6p26c/edit?usp=sharing")'>@Credit</span>
 |	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
-<li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
-	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
-	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
-	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
-	<span onclick='go("https://miny.app/")'>miny</span>
-	<span onclick='go("https://www.bing.com")'>Bing</span>
-	<span onclick='go("https://lynopus.github.io/@.htm")'>@</span>
-	<span onclick='go("file:///sdcard/@.htm")'>.</span>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
