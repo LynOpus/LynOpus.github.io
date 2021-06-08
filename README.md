@@ -10,6 +10,8 @@ GitHib [Pages](https://pages.github.com/) Tutorial : [0](https://lynopus.github.
 
 - [bmLet](bmLet.md) : Bookmark Let
 
+- [youTube Block List](https://raw.githubusercontent.com/blocklistproject/Lists/master/youtube.txt)
+
 
 [sync]: # ( git ls-files | xargs git add ; git commit -m "`date +'sync on %F %T'`" ; git push -u origin master )
 [update]: # ( git ls-files | xargs git add ; git commit -m "$(date +'Update on %F %T')"; git push -u origin master )
