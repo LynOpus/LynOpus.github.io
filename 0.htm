@@ -26,6 +26,17 @@ font-size: 48px;
 font-family:DroidSans;
 height: 64px;
 }
+span.o{
+cursor: pointer;
+margin: 0 4px;
+padding: 2;
+border-radius: 4px;
+border: 1px solid black;
+background: #66cc66;
+font-size: 24px;
+font-family:DroidSans;
+height: 32px;
+}
 </style>
 <script>
 function go(uri){window.open(uri, '_blank');}
@@ -46,7 +57,7 @@ function xLoad()
 
 	if (/Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini|Slimjet/i.test(ua))
 	{
-		css = ' m';
+		css = (/OPR/g.test(ua)) ? ' o' : ' m';
 	}
 	else if (typeof window.orientation !== 'undefined')
 	{
@@ -106,6 +117,7 @@ function xLoad()
 	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
 	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
 	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
+	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
 <li><span onclick='go("https://m.facebook.com")'>FB</span>
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
 	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
@@ -113,6 +125,7 @@ function xLoad()
 	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
 	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
 	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
+	<span onclick='go("https://hackmd.io/@wahoo/bm")'>BM</span>
 	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
