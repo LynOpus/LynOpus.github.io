@@ -18,6 +18,9 @@
 
 ## Markdown
 
+- [bmx
+](javascript:(function(d){u=decodeURI(d.URL);t=d.title+'\n';alert('## '+t+'['+d.lastModified+']('+u+')\n\n\n+ ['+t+']('+u+')\n\n\n'+t+u);})(document);)
+
 - [#Chrono
 ](javascript:(function(d){var x=d.createElement('textarea');x.appendChild(d.createTextNode('\n## '+d.title+'\n\n['+d.lastModified+']('+d.URL+')\n\n'));d.body.appendChild(x);x.select();d.execCommand('copy');d.body.removeChild(x);})(document))
 
@@ -58,6 +61,16 @@
 | [orig version
 ](javascript:(function(){pfstyle='bk';_pnicer_script=document.createElement('SCRIPT');_pnicer_script.type='text/javascript';_pnicer_script.src='http://cdn.printfriendly.com/printfriendly.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_pnicer_script);_pnicer_css=document.createElement('LINK');_pnicer_css.rel='stylesheet';_pnicer_css.href='http://cdn.printfriendly.com/printfriendly.css';_pnicer_css.type='text/css';_pnicer_css.media='screen';document.getElementsByTagName('head')[0].appendChild(_pnicer_css);})();)
 
++ [Diigo](https://www.diigo.com/user/linfred)
+  - [DiigoLet](javascript:(function(d){s=d.createElement('script');s.type='text/javascript';s.src='https://www.diigo.com/javascripts/webtoolbar/diigolet_b_h_b.js';d.body.appendChild(s);})(document))
+  - [PostToDiigo](javascript:(function(d,w){var u=location.href;var desc=(w.getSelection ? w.getSelection().toString() : d.getSelection ? d.getSelection() : d.selection.createRange().text);w.open('https://www.diigo.com/post?url='+encodeURIComponent(u)+'&title='+encodeURIComponent(d.title||u)+'&desc='+encodeURIComponent(desc)+'&client=simplelet#main','_blank','menubar=no,height=580,width=608,toolbar=no,scrollbars=no,status=no');})(document,window))
+  - [DiigoLater](javascript:(function(){DIIGO_R_TEST=false;DIIGO_R_SCRIPT=document.createElement('SCRIPT');DIIGO_R_SCRIPT.type='text/javascript';DIIGO_R_SCRIPT.src='https://www.diigo.com/javascripts/readlater.js';document.getElementsByTagName('body')[0].appendChild(DIIGO_R_SCRIPT)})())
+  - [+dg](javascript:(function(d){DIIGO_R_TEST=false;s=d.createElement('script');s.type='text/javascript';s.src='https://www.diigo.com/javascripts/readlater.js';d.getElementsByTagName('body')[0].appendChild(s)})(document))
+
++ [LineIt](javascript:(function(d){window.open('https://social-plugins.line.me/lineit/share?url='+encodeURIComponent(d.location)+'&text='+encodeURIComponent(d.title),'','width=720,height=560,top=40,left=40').focus()})(document))
+
++ [.ol](javascript:void(window.open('https://outline.com/'+document.location.href)) "outline" )
+
 
 ## Readability
 
@@ -94,7 +107,7 @@
 ## DicT - Dictionary & Translator
 
 - [同文堂
-](javascript:(function(d){var s=d.getElementById('twLet');if(s!=null){d.body.removeChild(s);}s=d.createElement('script');s.language='javascript';s.type='text/javascript';s.src='https://lynopus.github.io/tongwen.js';s.id='twLet';d.body.appendChild(s);})(document);)
+](javascript:(function(d){var s=d.getElementById('twLet');if(s!=null){d.body.removeChild(s);}s=d.createElement('script');s.language='javascript';s.type='text/javascript';s.src='https://lynopus.github.io/tongwen.js';s.id='twLet';d.body.appendChild(s);})(document))
 
 - [gTran
 ](javascript:(function(w,d){var u='https://translate.google.com/',e='&hl=en&langpair=auto|zh-TW&tbb=1&ie='+(d.charset||d.characterSet),z='getSelection',t=(''+(w[z]?w[z]():d[z]?d[z]():d.selection.createRange().text)).replace(/(^\s+|\s+$)/g,'');if(t!=''){y=w.open(u+'?text='+t+e,'','status=0,toolbar=0,width=800,height=640,resizable=1');}else{location.href=u+'translate?u='+encodeURIComponent(location.href)+e;}})(window,document))
@@ -164,8 +177,7 @@
 ](javascript:(function(w,d){var s=""+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(!s)s=prompt("\u8acb\u8f38\u5165\u641c\u5c0b\u7684\u95dc\u9375\u5b57%EF%BC%9A","");w.open('https://www.baidu.com/s?wd='+s);w.open('https://www.google.com/search?q='+s+'&ie=utf-8&oe=utf-8');w.open('https://www.bing.com/search?q='+s)})(window,document))
 : multiple search engines
 
-- [WGB
-](javascript:(function(d,w){var s=''+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(s){s=encodeURIComponent(s);w.open('https://en.wikipedia.org//w/index.php?title=Special:Search&search='+s);w.open('https://www.google.com/search?ie=utf-8&oe=utf-8&q='+s);w.open('https://www.bing.com/search?q='+s)}})(document,window);)
+- [WGB](javascript:(function(d,w){var s=''+(w.getSelection?w.getSelection():d.getSelection?d.getSelection():d.selection.createRange().text);if(s){s=encodeURIComponent(s);w.open('https://en.wikipedia.org//w/index.php?title=Special:Search&search='+s);w.open('https://www.google.com/search?ie=utf-8&oe=utf-8&q='+s);w.open('https://www.bing.com/search?q='+s)}})(document,window))
 : search Wiki / Google / Bing
 
 
