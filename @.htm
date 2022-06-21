@@ -42,6 +42,13 @@ function bing()
 	else x='';
 	go('https://www.bing.com'+x);
 }
+function yx()
+{
+	var x = document.getElementById('za').value;
+	if (x.length > 1) x='/search/?text='+encodeURIComponent(x+' torrent');
+	else x='';
+	go('https://yandex.com'+x);
+}
 function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+encodeURIComponent(document.getElementById('za').value))}
 </script>
 </head>
@@ -96,12 +103,15 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
 	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
 |	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
+	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/jd30_stu_jcps_tp_edu_tw/EsS1TqD6Z5JHhsdTcyaT2hEBqCWh48vWDScyPKUjvGmUVA?e=SNsTZA")'>@jcy</span>
+	<span onclick='go("https://alumniscuedutw-my.sharepoint.com/:f:/g/personal/bd09717304_alumni_scu_edu_tw/EmDm63nifeJClt56D_ZKpngBU9HUwSiLHLAT9MbyHEHS8w?e=lQ8poX")'>@ms2</span>
 <li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
 	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
 	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
 	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
 	<span onclick='go("https://miny.app/")'>miny</span>
 	<span onclick='bing()'>Bing</span>
+	<span onclick='yx()'>Yandex</span>
 	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span><a id=ax href=# target=_blank style="display:none">.</a>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
