@@ -30,10 +30,20 @@ function za()
 	var x = document.getElementById('za').value;
 	mm("https://www.google.com/search?num=20&ie=UTF-8&q="+encodeURIComponent(x));
 }
+function you()
+{
+	var x = document.getElementById('za').value;
+	go('https://you.com/search?q='+encodeURIComponent(x));
+}
 function bf()
 {
 	var x = document.getElementById('za').value;
 	go('https://m.feebee.com.tw/s/?q='+encodeURIComponent(x));
+}
+function bo()
+{
+	var x = document.getElementById('za').value;
+	go('https://biggo.com.tw/s/?q=%s'+encodeURIComponent(x));
 }
 function bing()
 {
@@ -53,9 +63,11 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 </script>
 </head>
 <body>
-<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:32pt;background:#7c7'>
+<div align=center><span onclick='you()'> u&nbsp;</span> <input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:36pt;background:#7c7'>
 <span onclick='za()'>&nbsp; + &nbsp;</span>
-<span onclick='bf()'> ¥&nbsp;</span> <span onclick='good()'> $&nbsp;</span></div>
+<span onclick='bf()'> ¥&nbsp;</span>
+<span onclick='bo()'> o&nbsp;</span>
+<span onclick='good()'> $&nbsp;</span></div>
 <ul type=square>
 <li><span onclick='go("https://today.line.me")'>LiNE</span>
 	<span onclick='go("https://apk.tw")'>apk.tw</span>
@@ -101,7 +113,6 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
 <li><span onclick='go("https://m.facebook.com")'>FB</span>
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
-	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
 |	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
 	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/jd30_stu_jcps_tp_edu_tw/EsS1TqD6Z5JHhsdTcyaT2hEBqCWh48vWDScyPKUjvGmUVA?e=SNsTZA")'>@jcy</span>
 	<span onclick='go("https://alumniscuedutw-my.sharepoint.com/:f:/g/personal/bd09717304_alumni_scu_edu_tw/EmDm63nifeJClt56D_ZKpngBU9HUwSiLHLAT9MbyHEHS8w?e=lQ8poX")'>@ms2</span>
