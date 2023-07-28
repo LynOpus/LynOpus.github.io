@@ -14,16 +14,11 @@ height: 36px;
 }
 </style>
 <script>
+function go(uri){window.open(uri, '_blank');}
 function mm(u){
 var x=document.getElementById('ax');
 ax.href=u;
 setTimeout(function(){document.getElementById('ax').click();}, 100);
-}
-function go(uri){window.open(uri, '_blank');}
-function bCat(n, x){
-	var utc = new Date();
-	var t = new Date(utc.getTime() - (utc.getTimezoneOffset() * 60000) + 86400000 * n);
-	go('http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/event/' + x + t.toISOString().substring(0,10).replace(/-/g,'') + '.html');
 }
 function za()
 {
@@ -71,34 +66,31 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 <ul type=square>
 <li><span onclick='go("https://today.line.me")'>LiNE</span>
 	<span onclick='go("https://apk.tw")'>apk.tw</span>
-	<span onclick='go("https://awabest.com"); return false;'>awabest</span>
 	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>&nbsp; jk &nbsp;</span>
 	<span onclick='go("https://94i.in/")'>94i</span>
+	<span onclick='go("https://bingfeng.tw/forum-android-1.html")'>冰楓</span>
+	<span onclick='go("https://black.is-best.site/forum-59-1.html")'>黑網</span>
 	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
 	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
 	<span onclick='go("https://oursogo.com/forum-19-1.html")'>sogo</span>
+	<span onclick='go("https://www.4khdr.cn")'>4K</span>
 	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+<li><span onclick='go("https://webmail.vivaldi.net")'>vMail</span>
+	<span onclick='go("https://docs.craft.do/editor")'>Craft</span>
+	<span onclick='go("https://www.craft.do/s/gKIS7c6lFvCBeC")'>=0Day</span>
 <li><span onclick='go("https://www.above.tw")'>豹投資</span>
 	<span onclick='go("https://www.cmoney.tw/follow/channel")'>爆料同學會</span>
 	<span onclick='go("https://statementdog.com")'>財報狗</span>
 	<span onclick='go("https://hackmd.io/@wahoo/bm")'>BM</span>
-<li><span onclick='go("http://ponos.s3.amazonaws.com/information/appli/battlecats/calendar/tw/index.html")'>貓咪</span> :
-	<span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
-	<span onclick='go("https://5wzldcm644rb6gydwsl48a-on.drv.tw/CATDETA/")'>日程表</span>
-	<span onclick='bCat(-2, "tw/")'>前</span>
-	<span onclick='bCat(-1, "tw/")'>昨</span>
-	<span onclick='bCat(0, "tw/")'>今</span> 
-	<span onclick='bCat(1, "tw/")'>明</span> 
+<li><span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span> :
 	<span onclick='go("https://goo.gl/Qa5t8x")'>週</span>
 	<span onclick='go("https://goo.gl/eUu8xH")'>日</span>
-	<span onclick='go("https://sites.google.com/site/maozhan123/home")'>曆</span>
-|	<span onclick='go("http://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/calendar/index.html")'>JP</span>
-	<span onclick='bCat(-2, "")'>前</span>
-	<span onclick='bCat(-1, "")'>昨</span>
-	<span onclick='bCat(0, "")'>今</span> 
-	<span onclick='bCat(1, "")'>明</span> 
 	<span onclick='go("http://www.toutzn.byethost24.com/")'>關卡</span>
 	<span onclick='go("http://cattw.epizy.com/")'>②</span>
+|	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
+	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
+	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
+	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
 <li><span onclick='go("https://keep.google.com/#label/2do")'>Keep</span>
 	<span onclick='go("https://keep.google.com/#label/Nyanko")'>Nyanko</span>
 	<span onclick='go("https://contacts.google.com")'>聯絡人</span>
@@ -107,10 +99,6 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 	<span onclick='go("https://www.ip-adress.com")'>IP</span>
 	<span onclick='go("https://ipleak.net")'>ipLeak</span>
 	<span onclick='go("https://whoer.net")'>Whoer</span>
-	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
-	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
-	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
-	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
 <li><span onclick='go("https://m.facebook.com")'>FB</span>
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
 |	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
@@ -120,7 +108,6 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
 	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
 	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
-	<span onclick='go("https://miny.app/")'>miny</span>
 	<span onclick='bing()'>Bing</span>
 	<span onclick='yx()'>Yandex</span>
 	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span><a id=ax href=# target=_blank style="display:none">.</a>
