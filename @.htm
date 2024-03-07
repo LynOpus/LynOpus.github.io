@@ -55,14 +55,15 @@ function yx()
 	go('https://yandex.com'+x);
 }
 function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+encodeURIComponent(document.getElementById('za').value))}
+function nil(){document.getElementById('za').value='';}
 </script>
 </head>
 <body>
 <div align=center><span onclick='you()'> u&nbsp;</span> <input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:36pt;background:#7c7'>
 <span onclick='za()'>&nbsp; + &nbsp;</span>
-<span onclick='bf()'> ¥&nbsp;</span>
-<span onclick='bo()'> o&nbsp;</span>
-<span onclick='good()'> $&nbsp;</span></div>
+<span onclick='bf()'>&nbsp; ¥&nbsp;</span>
+<span onclick='bo()'>&nbsp; o&nbsp;</span>
+<span onclick='good()'>&nbsp; $&nbsp;</span></div>
 <ul type=square>
 <li><span onclick='go("https://today.line.me")'>LiNE</span>
 	<span onclick='go("https://apk.tw")'>apk.tw</span>
@@ -110,6 +111,8 @@ function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+enc
 	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
 	<span onclick='bing()'>Bing</span>
 	<span onclick='yx()'>Yandex</span>
-	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span><a id=ax href=# target=_blank style="display:none">.</a>
+	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span>
+	<span onclick='nil()'>-=-</span>
+<a id=ax href=# target=_blank style="display:none">.</a>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
