@@ -55,7 +55,7 @@ function yx()
 	go('https://yandex.com'+x);
 }
 function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+encodeURIComponent(document.getElementById('za').value))}
-function nil(){document.getElementById('za').value='';}
+function nil(){var x=document.getElementById('za'); x.value=''; x.focus();}
 </script>
 </head>
 <body>
