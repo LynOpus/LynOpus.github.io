@@ -39,7 +39,11 @@ height: 32px;
 }
 </style>
 <script>
-function go(uri){window.open(uri, '_blank');}
+function go(u){
+var x=document.getElementById('ax');
+ax.href=u;
+setTimeout(function(){document.getElementById('ax').click();}, 100);
+
 function za()
 {
   var x = document.getElementById('za').value;
@@ -107,5 +111,6 @@ function xLoad()
 	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
 	<span onclick='go("https://hackmd.io/@wahoo/bm")'>BM</span>
 	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span>
+<a id=ax href=# target=_blank style="display:none">.</a>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->
