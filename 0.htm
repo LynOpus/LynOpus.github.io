@@ -12,7 +12,7 @@ border-radius: 3px;
 border: 1px solid #D74B22;
 background: #f9f99f;
 font-size: 20px;
-font-family:Meiryo,"微軟正黑體","Microsoft JhengHei",Verdana,Arial,sans-serif;
+font-family:"LXGW WenKai Screen","微軟正黑體","Microsoft JhengHei",Verdana,Arial,sans-serif;
 height: 28px;
 }
 span.m{
@@ -40,14 +40,13 @@ height: 32px;
 </style>
 <script>
 function go(u){
-var x=document.getElementById('ax');
-ax.href=u;
-setTimeout(function(){document.getElementById('ax').click();}, 100);
-
+	document.getElementById('ax').href=u;
+	setTimeout(function(){document.getElementById('ax').click();}, 100);
+}
 function za()
 {
-  var x = document.getElementById('za').value;
-  go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
+	var x = document.getElementById('za').value;
+	go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
 }
 function xLoad()
 {
@@ -58,7 +57,7 @@ function xLoad()
 	{
 		css = (/OPR/g.test(ua)) ? ' o' : ' m';
 	}
-	else if (typeof window.orientation !== 'undefined')
+	else if (typeof window.orientation != 'undefined')
 	{
 		ua += ' : ' + window.orientation;
 		css = ' m';
@@ -103,6 +102,7 @@ function xLoad()
 	<span onclick='go("https://ipleak.net")'>ipLeak</span>
 	<span onclick='go("https://whoer.net")'>Whoer</span>
 <li><span onclick='go("https://m.facebook.com")'>FB</span>
+	<span onclick='go("threads.net")'>Thread</span>
 	<span onclick='go("https://send.firefox.com")'>Fox</span>
 	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
 <li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
