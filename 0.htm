@@ -43,11 +43,13 @@ function go(u){
 	document.getElementById('ax').href=u;
 	setTimeout(function(){document.getElementById('ax').click();}, 100);
 }
-function za()
-{
-	var x = document.getElementById('za').value;
-	go('https://www.google.com/search?num=20&ie=UTF-8&q='+encodeURIComponent(x));
+
+function go(u){window.open(u, '_blank');}
+function hs(u){
+	document.getElementById('ax').href='https://'+u;
+	setTimeout(function(){document.getElementById('ax').click();}, 100);
 }
+function sx(u){hs(u+encodeURIComponent(document.getElementById('za').value));
 function xLoad()
 {
 	var css = ' b';
@@ -74,43 +76,54 @@ function xLoad()
 </script>
 </head>
 <body onload='xLoad()'>
-<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:44pt;background:#7c7'> <span onclick='za()'>&nbsp; + &nbsp;</span></div>
+<div align=center><input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:44pt;background:#7c7'>
+	<span onclick='sx("www.google.com/search?num=20&ie=UTF-8&q=")'>&nbsp; + &nbsp;</span>
 <ul type=square>
- <li>0day : <span onclick='go("https://apk.tw")'>apk.tw</span>
-	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>&nbsp;jk </span>
-	<span onclick='go("https://www.microduo.tw/plugin.php?id=zb7com_sign:sign&signop=sign&formhash=fb2aa9eb")'>Duo</span>
+ <li>0day : <span onclick='hs("apk.tw")'>apk.tw</span>
+	<span onclick='hs("www.jkforum.net/forum-526-1.html")'>&nbsp;jk </span>
+	<span onclick='hs("www.microduo.tw/plugin.php?id=zb7com_sign:sign&signop=sign&formhash=fb2aa9eb")'>Duo</span>
 	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
-	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
-	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
- <li><span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
-	<span onclick='go("https://goo.gl/Qa5t8x")'>週</span>
-	<span onclick='go("https://goo.gl/eUu8xH")'>日</span>
-	<span onclick='go("https://toutzn.000webhostapp.com/index.php")'>關卡</span>
-	<span onclick='go("https://cattw.000webhostapp.com/index.php")'>②</span>
-	<span onclick='go("https://cattw2.000webhostapp.com/")'>(2)</span>
+	<span onclick='hs("m.mobile01.com/articles.php")'>m01</span>
+	<span onclick='hs("mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+ <li><span onclick='hs("m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span>
+	<span onclick='hs("goo.gl/Qa5t8x")'>週</span>
+	<span onclick='hs("goo.gl/eUu8xH")'>日</span>
+	<span onclick='hs("toutzn.000webhostapp.com/index.php")'>關卡</span>
+	<span onclick='hs("cattw.000webhostapp.com/index.php")'>②</span>
+	<span onclick='hs("cattw2.000webhostapp.com/")'>(2)</span>
 	<span onclick='go("http://www.toutzn.byethost24.com/")'>(3)</span>
 |	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
-	<span onclick='go("https://apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
-	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
-	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
-<li><span onclick='go("https://keep.google.com/#label/2do")'>Keep</span>
-	<span onclick='go("https://keep.google.com/#label/Nyanko")'>Nyanko</span>
-	<span onclick='go("https://contacts.google.com")'>聯絡人</span>
-	<span onclick='go("https://fit.google.com")'>Fit</span>
-	<span onclick='go("https://www.geoiptool.com")'>Geo</span>
-	<span onclick='go("https://www.ip-adress.com")'>IP</span>
-	<span onclick='go("https://ipleak.net")'>ipLeak</span>
-	<span onclick='go("https://whoer.net")'>Whoer</span>
-<li><span onclick='go("https://m.facebook.com")'>FB</span>
-	<span onclick='go("https://threads.net")'>Thread</span>
-	<span onclick='go("https://send.firefox.com")'>Fox</span>
-	<span onclick='go("https://m.feebee.com.tw")'>飛比</span>
-<li><span onclick='go("https://app.simplenote.com")'>SimpleNote</span>
-	<span onclick='go("https://www.evernote.com/Home.action")'>EverNote</span>
-	<span onclick='go("https://m.box.com/browse/0")'>bNote</span>
-	<span onclick='go("https://m.box.com/favorites")'>bFav</span>
-	<span onclick='go("https://hackmd.io/@wahoo/bm")'>BM</span>
-	<span onclick='go("https://lynopus.github.io/0.htm")'>@</span>
+	<span onclick='hs("apkplz.net/app/jp.co.ponos.battlecats")'>Z</span>
+	<span onclick='hs("apps.qoo-app.com/app/1545")'>C</span>
+	<span onclick='hs("apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
+<li><span onclick='hs("keep.google.com/#label/2do")'>Keep</span>
+	<span onclick='hs("keep.google.com/#label/Nyanko")'>Nyanko</span>
+	<span onclick='hs("contacts.google.com")'>聯絡人</span>
+	<span onclick='hs("fit.google.com")'>Fit</span>
+	<span onclick='hs("www.geoiptool.com")'>Geo</span>
+	<span onclick='hs("www.ip-adress.com")'>IP</span>
+	<span onclick='hs("ipleak.net")'>ipLeak</span>
+	<span onclick='hs("whoer.net")'>Whoer</span>
+<li><span onclick='hs("m.facebook.com")'>FB</span>
+	<span onclick='hs("threads.net")'>Thread</span>
+	<span onclick='hs("send.firefox.com")'>Fox</span>
+	<span onclick='hs("m.feebee.com.tw")'>飛比</span>
+	<span onclick='sx("www.google.com/search?udm=50&q=")'>Gemini</span>
+    <span onclick='sx("www.perplexity.ai/search?q=")'>pLexity</span>
+    <span onclick='sx("en.wikipedia.org/wiki/Special:Search?search=")'>wiki</span>
+    <span onclick='sx("duckduckgo.com/?t=ofa&q=")'>Duck</span>
+    <span onclick='sx("www.ecosia.org/search?tt=ofa&q=")'>Ecosia</span>
+    <span onclick='sx("www.qwant.com/?t=web&client=brz-operaa&q=")'>Qwant</span>
+    <span onclick='sx("www.startpage.com/do/search?&segment=startpage.ofa&q=")'>StartPage</span>
+	<span onclick='sx("www.baidu.com/s?ie=utf-8&wd=")'>Baidu</span>
+	<span onclick='sx("yandex.com/search/?text=")'>Yandex</span>
+	<span onclick='sx("play.google.com/store/apps/details?id")'>gStore</span>
+<li><span onclick='hs("app.simplenote.com")'>SimpleNote</span>
+	<span onclick='hs("www.evernote.com/Home.action")'>EverNote</span>
+	<span onclick='hs("m.box.com/browse/0")'>bNote</span>
+	<span onclick='hs("m.box.com/favorites")'>bFav</span>
+	<span onclick='hs("hackmd.io/@wahoo/bm")'>BM</span>
+	<span onclick='hs("lynopus.github.io/0.htm")'>@</span>
 <a id=ax href=# target=_blank style="display:none">.</a>
 </ul></body></html>
 <!-- vim: set ts=4 sw=4 tw=1024 fdm=marker noai noet: -*- coding: utf-8 -*- -->

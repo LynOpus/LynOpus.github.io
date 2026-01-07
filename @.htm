@@ -14,105 +14,83 @@ height: 44px;
 }
 </style>
 <script>
-function go(uri){window.open(uri, '_blank');}
-function mm(u){
-var x=document.getElementById('ax');
-ax.href=u;
-setTimeout(function(){document.getElementById('ax').click();}, 100);
+function go(u){window.open(u, '_blank');}
+function hs(u){
+	document.getElementById('ax').href='https://'+u;
+	setTimeout(function(){document.getElementById('ax').click();}, 100);
 }
-function za()
-{
-	var x = document.getElementById('za').value;
-	mm("https://www.google.com/search?num=20&ie=UTF-8&q="+encodeURIComponent(x));
-}
-function you()
-{
-	var x = document.getElementById('za').value;
-	go('https://you.com/search?q='+encodeURIComponent(x));
-}
-function bf()
-{
-	var x = document.getElementById('za').value;
-	go('https://m.feebee.com.tw/s/?q='+encodeURIComponent(x));
-}
-function bo()
-{
-	var x = document.getElementById('za').value;
-	go('https://biggo.com.tw/s/?q=%s'+encodeURIComponent(x));
+function sx(u){hs(u+encodeURIComponent(document.getElementById('za').value));
 }
 function bing()
 {
 	var x = document.getElementById('za').value;
-	if (x.length > 1) x='/search?q='+encodeURIComponent(x+' torrent');
-	else x='';
-	go('https://www.bing.com'+x);
+	x=(x.length > 1) ? '/search?q='+encodeURIComponent(x+' torrent') : '';
+	hs('www.bing.com'+x);
 }
-function yx()
-{
-	var x = document.getElementById('za').value;
-	if (x.length > 1) x='/search/?text='+encodeURIComponent(x+' torrent');
-	else x='';
-	go('https://yandex.com'+x);
-}
-function good(){mm('https://goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID='+encodeURIComponent(document.getElementById('za').value))}
 function nil(){var x=document.getElementById('za'); x.value=''; x.focus();}
 </script>
 </head>
 <body>
-<div align=center><span onclick='you()'> u&nbsp;</span> <input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:36pt;background:#7c7'>
-<span onclick='za()'>&nbsp; + &nbsp;</span>
-<span onclick='bf()'>&nbsp; ¥&nbsp;</span>
-<span onclick='bo()'>&nbsp; o&nbsp;</span>
-<span onclick='good()'>&nbsp; $&nbsp;</span></div>
+<div align=center><span onclick='sx("you.com/search?q=")'> u&nbsp;</span> <input id=za type=text size=12 autofocus style='padding:2;border:1px solid gold;font-size:36pt;background:#7c7'>
+<span onclick='sx("www.google.com/search?num=20&ie=UTF-8&q=")'>&nbsp; + &nbsp;</span>
+<span onclick='sx("feebee.com.tw/s/?q=")'>&nbsp; ¥&nbsp;</span>
+<span onclick='sx("biggo.com.tw/s/")'>&nbsp; o&nbsp;</span>
+<span onclick='sx("goodinfo.tw/StockInfo/StockDetail.asp?STOCK_ID=")'>&nbsp; $&nbsp;</span></div>
 <ul type=square>
-<li><span onclick='go("https://today.line.me")'>LiNE</span>
-	<span onclick='go("https://apk.tw")'>apk.tw</span>
-	<span onclick='go("https://www.jkforum.net/forum-526-1.html")'>&nbsp; jk &nbsp;</span>
-	<span onclick='go("https://94i.in/")'>94i</span>
-	<span onclick='go("https://bingfeng.tw/forum-android-1.html")'>冰楓</span>
+<li><span onclick='hs("today.line.me")'>LiNE</span>
+	<span onclick='hs("apk.tw")'>apk.tw</span>
+	<span onclick='hs("www.jkforum.net/forum-526-1.html")'>&nbsp; jk &nbsp;</span>
+	<span onclick='hs("94i.in/")'>94i</span>
+	<span onclick='hs("bingfeng.tw/forum-android-1.html")'>冰楓</span>
 	<span onclick='go("http://www.xfastest.com/forum.php")'>xFast</span>
-	<span onclick='go("https://m.mobile01.com/articles.php")'>m01</span>
-	<span onclick='go("https://oursogo.com/forum.php?mod=forumdisplay&fid=162&filter=typeid&typeid=797")'>sogo</span>
-	<span onclick='go("https://oursogo.com/forum.php?mod=forumdisplay&fid=19&filter=typeid&typeid=83")'>=bt=</span>
-	<span onclick='go("https://www.4khdr.cn")'>4K</span>
-<li><span onclick='go("https://mail.aol.com")'>AoL</span>
-	<span onclick='go("https://mail.yahoo.com/m/")'>yMail</span>
-	<span onclick='go("https://calendar.yahoo.com/?view=notepad")'>yNote</span>
-	<span onclick='go("https://webmail.vivaldi.net")'>vMail</span>
-	<span onclick='go("https://docs.craft.do/editor")'>Craft</span>
-	<span onclick='go("https://bushes-move-m1h.craft.me/hduhaM6QZwXFvf")'>0-Craft</span>
-<li><span onclick='go("https://www.cmoney.tw/follow/channel")'>爆料同學會</span>
-	<span onclick='go("https://statementdog.com")'>財報狗</span>
-	<span onclick='go("https://www.fase.idv.tw/index.php")'>刷卡回饋</span>
-<li><span onclick='go("https://m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span> :
-	<span onclick='go("https://goo.gl/Qa5t8x")'>週</span>
-	<span onclick='go("https://goo.gl/eUu8xH")'>日</span>
+	<span onclick='hs("m.mobile01.com/articles.php")'>m01</span>
+	<span onclick='hs("oursogo.com/forum.php?mod=forumdisplay&fid=162&filter=typeid&typeid=797")'>sogo</span>
+	<span onclick='hs("oursogo.com/forum.php?mod=forumdisplay&fid=19&filter=typeid&typeid=83")'>=bt=</span>
+	<span onclick='hs("www.4khdr.cn")'>4K</span>
+<li><span onclick='hs("mail.aol.com")'>AoL</span>
+	<span onclick='hs("mail.yahoo.com/m/")'>yMail</span>
+	<span onclick='hs("calendar.yahoo.com/?view=notepad")'>yNote</span>
+	<span onclick='hs("webmail.vivaldi.net")'>vMail</span>
+	<span onclick='hs("docs.craft.do/editor")'>Craft</span>
+	<span onclick='hs("bushes-move-m1h.craft.me/hduhaM6QZwXFvf")'>0-Craft</span>
+<li><span onclick='hs("www.cmoney.tw/follow/channel")'>爆料同學會</span>
+	<span onclick='hs("statementdog.com")'>財報狗</span>
+	<span onclick='hs("www.fase.idv.tw/index.php")'>刷卡回饋</span>
+<li><span onclick='hs("m.gamer.com.tw/forum/B.php?bsn=23772")'>巴哈姆特</span> :
+	<span onclick='hs("goo.gl/Qa5t8x")'>週</span>
+	<span onclick='hs("goo.gl/eUu8xH")'>日</span>
 	<span onclick='go("http://www.toutzn.byethost24.com/")'>關卡</span>
 	<span onclick='go("http://cattw.epizy.com/")'>②</span>
 |	<span onclick='go("http://play.google.com/store/apps/details?id=jp.co.ponos.battlecats")'>dL</span>
-	<span onclick='go("https://apps.qoo-app.com/app/1545")'>C</span>
-	<span onclick='go("https://apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
-	<span onclick='go("https://www.apkmirror.com/apk/ponos/にゃんこ大戦争/")'>M</span>
-<li><span onclick='go("https://keep.google.com/#label/2do")'>Keep</span>
-	<span onclick='go("https://keep.google.com/#label/Nyanko")'>Nyanko</span>
-	<span onclick='go("https://contacts.google.com")'>聯絡人</span>
-	<span onclick='go("https://fit.google.com")'>Fit</span>
-	<span onclick='go("https://www.geoiptool.com")'>Geo</span>
-	<span onclick='go("https://www.ip-adress.com")'>IP</span>
-	<span onclick='go("https://ipleak.net")'>ipLeak</span>
-	<span onclick='go("https://whoer.net")'>Whoer</span>
-	<span onclick='go("https://mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
-<li><span onclick='go("https://m.facebook.com")'>FB</span>
-|	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/h4306_stu_jcps_tp_edu_tw/En-IqmSAnMpMi6vZi3r5pRMBupNk1Agl14PlEMhfITFOcQ?e=uFermt")'>@jci</span>
-	<span onclick='go("https://stujcpstpedutw-my.sharepoint.com/:f:/g/personal/jd30_stu_jcps_tp_edu_tw/EsS1TqD6Z5JHhsdTcyaT2hEBqCWh48vWDScyPKUjvGmUVA?e=SNsTZA")'>@jcy</span>
-	<span onclick='go("https://alumniscuedutw-my.sharepoint.com/:f:/g/personal/bd09717304_alumni_scu_edu_tw/EmDm63nifeJClt56D_ZKpngBU9HUwSiLHLAT9MbyHEHS8w?e=lQ8poX")'>@ms2</span>
-<li><span onclick='bing()'>Bing</span>
-	<span onclick='yx()'>Yandex</span>
-	<span onclick='go("https://hackmd.io/@wahoo/0x")'>0x</span>
-	<span onclick='go("https://hackmd.io/@wahoo/myyDL")'>h-dL</span>
-	<span onclick='go("https://hackmd.io/@wahoo/bm")'>BM</span>
-	<span onclick='go("https://lynopus.github.io/0.htm")'>0</span>
-	<span onclick='go("https://lynopus.github.io/@.htm")'>@</span>
+	<span onclick='hs("apps.qoo-app.com/app/1545")'>C</span>
+	<span onclick='hs("apkcombo.com/tw/にゃんこ大戦争/jp.co.ponos.battlecats/")'>B</span>
+	<span onclick='hs("www.apkmirror.com/apk/ponos/にゃんこ大戦争/")'>M</span>
+<li><span onclick='hs("keep.google.com/#label/2do")'>Keep</span>
+	<span onclick='hs("keep.google.com/#label/Nyanko")'>Nyanko</span>
+	<span onclick='hs("contacts.google.com")'>聯絡人</span>
+	<span onclick='hs("fit.google.com")'>Fit</span>
+	<span onclick='hs("www.geoiptool.com")'>Geo</span>
+	<span onclick='hs("www.ip-adress.com")'>IP</span>
+	<span onclick='hs("ipleak.net")'>ipLeak</span>
+	<span onclick='hs("whoer.net")'>Whoer</span>
+	<span onclick='hs("mycar.quanta-camp.com/MyCarWebAP/6cf79aa5-4fe0-41a0-9c7f-569ec6e34eed/Traffic/MyShuttle")'>交通車</span>
+<li><span onclick='hs("m.facebook.com")'>FB</span>
+	<span onclick='bing()'>Bing</span>
+	<span onclick='sx("www.google.com/search?udm=50&q=")'>Gemini</span>
+    <span onclick='sx("www.perplexity.ai/search?q=")'>pLexity</span>
+    <span onclick='sx("en.wikipedia.org/wiki/Special:Search?search=")'>wiki</span>
+    <span onclick='sx("duckduckgo.com/?t=ofa&q=")'>Duck</span>
+    <span onclick='sx("www.ecosia.org/search?tt=ofa&q=")'>Ecosia</span>
+    <span onclick='sx("www.qwant.com/?t=web&client=brz-operaa&q=")'>Qwant</span>
+    <span onclick='sx("www.startpage.com/do/search?&segment=startpage.ofa&q=")'>StartPage</span>
+	<span onclick='sx("www.baidu.com/s?ie=utf-8&wd=")'>Baidu</span>
+	<span onclick='sx("yandex.com/search/?text=")'>Yandex</span>
+	<span onclick='sx("play.google.com/store/apps/details?id")'>gStore</span>
+<li><span onclick='hs("hackmd.io/@wahoo/0x")'>0x</span>
+	<span onclick='hs("hackmd.io/@wahoo/myyDL")'>h-dL</span>
+	<span onclick='hs("hackmd.io/@wahoo/bm")'>BM</span>
+	<span onclick='hs("lynopus.github.io/0.htm")'>0</span>
+	<span onclick='hs("lynopus.github.io/@.htm")'>@</span>
 	<span onclick='nil()'>-=-</span>
 <a id=ax href=# target=_blank style="display:none">.</a>
 </ul></body></html>
